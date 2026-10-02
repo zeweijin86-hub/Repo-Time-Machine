@@ -27,6 +27,15 @@ export function Overview({ report, commitIndex, onSelectCommit }: { report: Repo
       </div>
     </section>
 
+    <section className="orientation-panel">
+      <div className="orientation-copy"><span className="eyebrow">READ THE ARCHIVE</span><h2>从时间轴开始，不必先钻进十万行代码。</h2><p>Repo Time Machine 把“什么时候发生了什么”放在第一位，再带你回到具体文件与差异。</p></div>
+      <ol className="orientation-steps">
+        <li><span>01</span><div><strong>定位阶段</strong><small>拖动回放轨道，或点击关键节点。</small></div></li>
+        <li><span>02</span><div><strong>追踪文件</strong><small>查看模块何时出现、被谁改变。</small></div></li>
+        <li><span>03</span><div><strong>阅读差异</strong><small>在提交回放中回到当时的改动。</small></div></li>
+      </ol>
+    </section>
+
     <section className="metric-grid">
       <Metric label="可见提交" value={compactNumber(metrics.commits)} hint="随回放时间变化" accent />
       <Metric label="参与者" value={compactNumber(metrics.contributors)} hint="截至当前节点" />

@@ -1,8 +1,28 @@
 # Repo Time Machine
 
-> 把 Git 提交历史变成一份可播放、可探索的项目档案。
+> **Turn Git history into a playable, explorable repository archive.**
+>
+> 把散乱的 Git 提交、文件历史、tag 与 diff，收成一份能播放、能追溯、能带着走的项目档案。
 
-Repo Time Machine 是一个**本地优先**的 Git 仓库历史可视化 MVP。它将散落在 `git log`、文件历史、tag 与 diff 中的事实，聚合为统一的 `report.json`，并用可交互的时间线、文件生命周期与提交回放来阅读。
+Repo Time Machine is a **local-first** Git history visualizer for maintainers, new teammates, and technical storytellers. Instead of sending you through pages of `git log`, it turns repository facts into a shared `report.json` and lets you explore a project through a timeline, file lifecycles, and commit replay.
+
+## Why it exists
+
+When you inherit a mature codebase, the first questions are rarely “what is on line 42?” They are usually:
+
+| Question | Repo Time Machine view |
+| --- | --- |
+| When did this architecture appear? | **Timeline** highlights tags, releases, refactors, and growth phases. |
+| Who has context on this module? | **File Explorer** shows a file's creation date, contributors, and change trail. |
+| What exactly changed at that point? | **Commit Replay** returns to the affected files and a controlled diff excerpt. |
+
+The goal is not to replace Git. It is to make a repository's **historical shape** visible before you dive into implementation details.
+
+## Explore in 30 seconds
+
+1. Open the built-in demo and drag the replay rail to a meaningful year.
+2. Choose a milestone in **Timeline** to synchronize every view to that commit.
+3. Inspect a module in **File Explorer**, then read the change in **Commit Replay**.
 
 ## 当前能力
 
