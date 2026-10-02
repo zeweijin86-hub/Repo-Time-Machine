@@ -6,6 +6,19 @@
 
 Repo Time Machine is a **local-first** Git history visualizer for maintainers, new teammates, and technical storytellers. Instead of sending you through pages of `git log`, it turns repository facts into a shared `report.json` and lets you explore a project through a timeline, file lifecycles, and commit replay.
 
+<p align="center">
+  <a href="https://repotime-ffym3eeu.manus.space">Live demo</a> ·
+  <a href="#快速运行">Quick start</a> ·
+  <a href="#分析本地仓库">Local Git CLI</a> ·
+  <a href="#数据与隐私">Local-first privacy</a>
+</p>
+
+<p align="center">
+  <img src="./public/media/repo-time-machine-demo.gif" alt="Repo Time Machine: overview, timeline, file lifecycle, and commit replay" width="780" />
+</p>
+
+<p align="center"><em>Scrub a project stage → inspect a file lifecycle → read the commit that changed it.</em></p>
+
 ## Why it exists
 
 When you inherit a mature codebase, the first questions are rarely “what is on line 42?” They are usually:
